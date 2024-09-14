@@ -1,0 +1,44 @@
+[2024-09-02T07:25:38.024+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-02T07:25:38.041+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_cathcup_backfill_v1.task1 scheduled__2024-09-01T00:00:00+00:00 [queued]>
+[2024-09-02T07:25:38.049+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_cathcup_backfill_v1.task1 scheduled__2024-09-01T00:00:00+00:00 [queued]>
+[2024-09-02T07:25:38.050+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2024-09-02T07:25:38.066+0000] {taskinstance.py:2879} INFO - Executing <Task(BashOperator): task1> on 2024-09-01 00:00:00+00:00
+[2024-09-02T07:25:38.072+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=3104) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-02T07:25:38.072+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dag_with_cathcup_backfill_v1', 'task1', 'scheduled__2024-09-01T00:00:00+00:00', '--job-id', '427', '--raw', '--subdir', 'DAGS_FOLDER/cathcup_and_backfill_dag.py', '--cfg-path', '/tmp/tmpg3720exr']
+[2024-09-02T07:25:38.073+0000] {standard_task_runner.py:72} INFO - Started process 3106 to run task
+[2024-09-02T07:25:38.073+0000] {standard_task_runner.py:105} INFO - Job 427: Subtask task1
+[2024-09-02T07:25:38.120+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_with_cathcup_backfill_v1.task1 scheduled__2024-09-01T00:00:00+00:00 [running]> on host efc48c282cbe
+[2024-09-02T07:25:38.197+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ubeyd' AIRFLOW_CTX_DAG_ID='dag_with_cathcup_backfill_v1' AIRFLOW_CTX_TASK_ID='task1' AIRFLOW_CTX_EXECUTION_DATE='2024-09-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-01T00:00:00+00:00'
+[2024-09-02T07:25:38.198+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-02T07:25:38.211+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-09-02T07:25:38.212+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo This is a simple bash command!']
+[2024-09-02T07:25:38.222+0000] {subprocess.py:86} INFO - Output:
+[2024-09-02T07:25:38.223+0000] {subprocess.py:93} INFO - This is a simple bash command!
+[2024-09-02T07:25:38.223+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-09-02T07:25:38.247+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-02T07:25:38.248+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag_with_cathcup_backfill_v1, task_id=task1, run_id=scheduled__2024-09-01T00:00:00+00:00, execution_date=20240901T000000, start_date=20240902T072538, end_date=20240902T072538
+[2024-09-02T07:25:38.288+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-09-02T07:25:38.304+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-02T07:25:38.307+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2024-09-02T07:30:39.768+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-02T07:30:39.787+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_cathcup_backfill_v1.task1 scheduled__2024-09-01T00:00:00+00:00 [queued]>
+[2024-09-02T07:30:39.795+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_cathcup_backfill_v1.task1 scheduled__2024-09-01T00:00:00+00:00 [queued]>
+[2024-09-02T07:30:39.795+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2024-09-02T07:30:39.809+0000] {taskinstance.py:2879} INFO - Executing <Task(BashOperator): task1> on 2024-09-01 00:00:00+00:00
+[2024-09-02T07:30:39.816+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=3388) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-02T07:30:39.815+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dag_with_cathcup_backfill_v1', 'task1', 'scheduled__2024-09-01T00:00:00+00:00', '--job-id', '433', '--raw', '--subdir', 'DAGS_FOLDER/cathcup_and_backfill_dag.py', '--cfg-path', '/tmp/tmpe754013s']
+[2024-09-02T07:30:39.817+0000] {standard_task_runner.py:72} INFO - Started process 3397 to run task
+[2024-09-02T07:30:39.817+0000] {standard_task_runner.py:105} INFO - Job 433: Subtask task1
+[2024-09-02T07:30:39.862+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_with_cathcup_backfill_v1.task1 scheduled__2024-09-01T00:00:00+00:00 [running]> on host efc48c282cbe
+[2024-09-02T07:30:39.938+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ubeyd' AIRFLOW_CTX_DAG_ID='dag_with_cathcup_backfill_v1' AIRFLOW_CTX_TASK_ID='task1' AIRFLOW_CTX_EXECUTION_DATE='2024-09-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-01T00:00:00+00:00'
+[2024-09-02T07:30:39.939+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-02T07:30:39.955+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-09-02T07:30:39.956+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo This is a simple bash command!']
+[2024-09-02T07:30:39.966+0000] {subprocess.py:86} INFO - Output:
+[2024-09-02T07:30:39.969+0000] {subprocess.py:93} INFO - This is a simple bash command!
+[2024-09-02T07:30:39.969+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-09-02T07:30:39.992+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-02T07:30:39.993+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag_with_cathcup_backfill_v1, task_id=task1, run_id=scheduled__2024-09-01T00:00:00+00:00, execution_date=20240901T000000, start_date=20240902T073039, end_date=20240902T073039
+[2024-09-02T07:30:40.032+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-09-02T07:30:40.048+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-02T07:30:40.051+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,109 @@
+[2024-09-14T14:40:05.577+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-14T14:40:05.593+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_postgres_hooks_v4.postgres_to_s3 manual__2024-09-14T14:40:04.421921+00:00 [queued]>
+[2024-09-14T14:40:05.599+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_postgres_hooks_v4.postgres_to_s3 manual__2024-09-14T14:40:04.421921+00:00 [queued]>
+[2024-09-14T14:40:05.600+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2024-09-14T14:40:05.614+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): postgres_to_s3> on 2024-09-14 14:40:04.421921+00:00
+[2024-09-14T14:40:05.624+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=68686) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-14T14:40:05.625+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dag_with_postgres_hooks_v4', 'postgres_to_s3', 'manual__2024-09-14T14:40:04.421921+00:00', '--job-id', '743', '--raw', '--subdir', 'DAGS_FOLDER/postgres_hooks_dag.py', '--cfg-path', '/tmp/tmppoj4j53h']
+[2024-09-14T14:40:05.626+0000] {standard_task_runner.py:72} INFO - Started process 68687 to run task
+[2024-09-14T14:40:05.626+0000] {standard_task_runner.py:105} INFO - Job 743: Subtask postgres_to_s3
+[2024-09-14T14:40:05.670+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_with_postgres_hooks_v4.postgres_to_s3 manual__2024-09-14T14:40:04.421921+00:00 [running]> on host 01a3c7586b71
+[2024-09-14T14:40:05.742+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ubeyd' AIRFLOW_CTX_DAG_ID='dag_with_postgres_hooks_v4' AIRFLOW_CTX_TASK_ID='postgres_to_s3' AIRFLOW_CTX_EXECUTION_DATE='2024-09-14T14:40:04.421921+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-14T14:40:04.421921+00:00'
+[2024-09-14T14:40:05.744+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-14T14:40:05.756+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/operator_helpers.py:175 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2024-09-14T14:40:05.764+0000] {base.py:84} INFO - Retrieving connection 'postgres_localhost'
+[2024-09-14T14:40:05.776+0000] {postgres_hooks_dag.py:34} INFO - Saved orders data in text file get_orders_20240914.txt
+[2024-09-14T14:40:05.783+0000] {base.py:84} INFO - Retrieving connection 'minio_conn'
+[2024-09-14T14:40:05.784+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from login and password.
+[2024-09-14T14:40:05.785+0000] {logging_mixin.py:190} WARNING - <string>:9 AirflowProviderDeprecationWarning: extra['host'] is deprecated and will be removed in a future release. Please set extra['endpoint_url'] instead
+[2024-09-14T14:40:06.134+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/postgres_hooks_dag.py", line 44, in postgres_to_s3
+    loggin.info("Orders file %s has been pushed to S3!", f.name)
+    ^^^^^^
+NameError: name 'loggin' is not defined. Did you mean: 'logging'?
+[2024-09-14T14:40:06.147+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_with_postgres_hooks_v4, task_id=postgres_to_s3, run_id=manual__2024-09-14T14:40:04.421921+00:00, execution_date=20240914T144004, start_date=20240914T144005, end_date=20240914T144006
+[2024-09-14T14:40:06.162+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-14T14:40:06.163+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 743 for task postgres_to_s3 (name 'loggin' is not defined; 68687)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/postgres_hooks_dag.py", line 44, in postgres_to_s3
+    loggin.info("Orders file %s has been pushed to S3!", f.name)
+    ^^^^^^
+NameError: name 'loggin' is not defined. Did you mean: 'logging'?
+[2024-09-14T14:40:06.202+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2024-09-14T14:40:06.218+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-14T14:40:06.221+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

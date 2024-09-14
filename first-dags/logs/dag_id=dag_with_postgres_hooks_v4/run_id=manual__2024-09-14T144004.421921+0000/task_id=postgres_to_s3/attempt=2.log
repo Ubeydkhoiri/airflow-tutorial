@@ -1,0 +1,25 @@
+[2024-09-14T14:41:52.647+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-14T14:41:52.663+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_postgres_hooks_v4.postgres_to_s3 manual__2024-09-14T14:40:04.421921+00:00 [queued]>
+[2024-09-14T14:41:52.670+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_postgres_hooks_v4.postgres_to_s3 manual__2024-09-14T14:40:04.421921+00:00 [queued]>
+[2024-09-14T14:41:52.671+0000] {taskinstance.py:2856} INFO - Starting attempt 2 of 7
+[2024-09-14T14:41:52.684+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): postgres_to_s3> on 2024-09-14 14:40:04.421921+00:00
+[2024-09-14T14:41:52.693+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=68865) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-14T14:41:52.693+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dag_with_postgres_hooks_v4', 'postgres_to_s3', 'manual__2024-09-14T14:40:04.421921+00:00', '--job-id', '744', '--raw', '--subdir', 'DAGS_FOLDER/postgres_hooks_dag.py', '--cfg-path', '/tmp/tmpholwct50']
+[2024-09-14T14:41:52.694+0000] {standard_task_runner.py:72} INFO - Started process 68866 to run task
+[2024-09-14T14:41:52.694+0000] {standard_task_runner.py:105} INFO - Job 744: Subtask postgres_to_s3
+[2024-09-14T14:41:52.736+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_with_postgres_hooks_v4.postgres_to_s3 manual__2024-09-14T14:40:04.421921+00:00 [running]> on host 01a3c7586b71
+[2024-09-14T14:41:52.808+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ubeyd' AIRFLOW_CTX_DAG_ID='dag_with_postgres_hooks_v4' AIRFLOW_CTX_TASK_ID='postgres_to_s3' AIRFLOW_CTX_EXECUTION_DATE='2024-09-14T14:40:04.421921+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-14T14:40:04.421921+00:00'
+[2024-09-14T14:41:52.809+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-14T14:41:52.822+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/operator_helpers.py:175 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2024-09-14T14:41:52.831+0000] {base.py:84} INFO - Retrieving connection 'postgres_localhost'
+[2024-09-14T14:41:52.844+0000] {postgres_hooks_dag.py:34} INFO - Saved orders data in text file get_orders_20240914.txt
+[2024-09-14T14:41:52.852+0000] {base.py:84} INFO - Retrieving connection 'minio_conn'
+[2024-09-14T14:41:52.853+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from login and password.
+[2024-09-14T14:41:52.854+0000] {logging_mixin.py:190} WARNING - <string>:9 AirflowProviderDeprecationWarning: extra['host'] is deprecated and will be removed in a future release. Please set extra['endpoint_url'] instead
+[2024-09-14T14:41:53.188+0000] {postgres_hooks_dag.py:44} INFO - Orders file /tmp/tmpz7spqx9a20240914 has been pushed to S3!
+[2024-09-14T14:41:53.189+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-14T14:41:53.199+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-14T14:41:53.199+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag_with_postgres_hooks_v4, task_id=postgres_to_s3, run_id=manual__2024-09-14T14:40:04.421921+00:00, execution_date=20240914T144004, start_date=20240914T144152, end_date=20240914T144153
+[2024-09-14T14:41:53.230+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-09-14T14:41:53.244+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-14T14:41:53.248+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

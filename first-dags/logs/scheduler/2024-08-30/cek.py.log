@@ -1,0 +1,131 @@
+[2024-08-30T09:45:07.730+0000] {processor.py:186} INFO - Started process (PID=6876) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:45:07.730+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:45:07.732+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:07.731+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:45:07.755+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:45:07.849+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:07.849+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:45:07.870+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:07.869+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01 to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:45:07.894+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.170 seconds
+[2024-08-30T09:45:14.938+0000] {processor.py:186} INFO - Started process (PID=6883) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:45:14.939+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:45:14.940+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:14.940+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:45:14.965+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:45:15.082+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:15.081+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:dag_with_taskflow_api_v01_coder2j
+[2024-08-30T09:45:15.097+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:15.096+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:dag_with_taskflow_api_v01_coder2j
+[2024-08-30T09:45:15.106+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:15.105+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:dag_with_taskflow_api_v01_coder2j
+[2024-08-30T09:45:15.106+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:15.106+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:45:15.120+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:15.119+0000] {dag.py:3234} INFO - Creating ORM DAG for dag_with_taskflow_api_v01_coder2j
+[2024-08-30T09:45:15.130+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:15.130+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:45:15.150+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.217 seconds
+[2024-08-30T09:45:45.362+0000] {processor.py:186} INFO - Started process (PID=6918) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:45:45.363+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:45:45.364+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:45.364+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:45:45.382+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:45:45.410+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:45.410+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:45:45.436+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:45:45.435+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:45:45.456+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.100 seconds
+[2024-08-30T09:46:15.879+0000] {processor.py:186} INFO - Started process (PID=6953) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:46:15.880+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:46:15.881+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:46:15.881+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:46:15.898+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:46:15.924+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:46:15.924+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:46:15.948+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:46:15.948+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:46:15.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.094 seconds
+[2024-08-30T09:46:46.384+0000] {processor.py:186} INFO - Started process (PID=6979) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:46:46.385+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:46:46.386+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:46:46.386+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:46:46.403+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:46:46.428+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:46:46.428+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:46:46.452+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:46:46.452+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:46:46.472+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.094 seconds
+[2024-08-30T09:47:16.887+0000] {processor.py:186} INFO - Started process (PID=7005) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:47:16.888+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:47:16.889+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:47:16.889+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:47:16.908+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:47:16.933+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:47:16.933+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:47:16.956+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:47:16.956+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:47:16.985+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.104 seconds
+[2024-08-30T09:47:47.397+0000] {processor.py:186} INFO - Started process (PID=7031) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:47:47.398+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:47:47.399+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:47:47.399+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:47:47.420+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:47:47.449+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:47:47.449+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:47:47.477+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:47:47.477+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:47:47.509+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.117 seconds
+[2024-08-30T09:48:17.941+0000] {processor.py:186} INFO - Started process (PID=7058) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:48:17.942+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:48:17.944+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:48:17.943+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:48:17.963+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:48:17.993+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:48:17.992+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:48:18.020+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:48:18.020+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:48:18.044+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.108 seconds
+[2024-08-30T09:48:48.374+0000] {processor.py:186} INFO - Started process (PID=7084) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:48:48.375+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:48:48.377+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:48:48.377+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:48:48.395+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:48:48.502+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:48:48.501+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:48:48.515+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:48:48.515+0000] {dag.py:3234} INFO - Creating ORM DAG for dag_with_taskflow_api_v01_coder2j
+[2024-08-30T09:48:48.525+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:48:48.524+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:48:48.551+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.183 seconds
+[2024-08-30T09:49:18.979+0000] {processor.py:186} INFO - Started process (PID=7116) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:49:18.980+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:49:18.982+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:49:18.981+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:49:19.000+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:49:19.028+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:49:19.028+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:49:19.055+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:49:19.055+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:49:19.077+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.104 seconds
+[2024-08-30T09:49:49.523+0000] {processor.py:186} INFO - Started process (PID=7142) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:49:49.524+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:49:49.525+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:49:49.525+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:49:49.542+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:49:49.567+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:49:49.567+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:49:49.588+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:49:49.588+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:49:49.607+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.089 seconds
+[2024-08-30T09:50:20.097+0000] {processor.py:186} INFO - Started process (PID=7168) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:50:20.098+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:50:20.099+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:50:20.099+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:50:20.117+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:50:20.143+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:50:20.143+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:50:20.166+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:50:20.166+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:50:20.187+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.095 seconds
+[2024-08-30T09:50:50.624+0000] {processor.py:186} INFO - Started process (PID=7194) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:50:50.625+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:50:50.626+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:50:50.626+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:50:50.642+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:50:50.670+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:50:50.670+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:50:50.693+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:50:50.693+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:50:50.713+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.096 seconds
+[2024-08-30T09:51:21.149+0000] {processor.py:186} INFO - Started process (PID=7220) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:51:21.150+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:51:21.152+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:51:21.152+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:51:21.168+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:51:21.194+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:51:21.194+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:51:21.219+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:51:21.218+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:51:21.248+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.105 seconds
+[2024-08-30T09:51:51.704+0000] {processor.py:186} INFO - Started process (PID=7246) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:51:51.705+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:51:51.706+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:51:51.706+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:51:51.725+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:51:51.752+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:51:51.752+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:51:51.776+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:51:51.776+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:51:51.806+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.108 seconds
+[2024-08-30T09:52:22.230+0000] {processor.py:186} INFO - Started process (PID=7273) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:52:22.231+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:52:22.233+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:52:22.232+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:52:22.249+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:52:22.275+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:52:22.275+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:52:22.300+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:52:22.300+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:52:22.329+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.104 seconds
+[2024-08-30T09:52:53.166+0000] {processor.py:186} INFO - Started process (PID=7299) to work on /opt/airflow/dags/cek.py
+[2024-08-30T09:52:53.168+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T09:52:53.170+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:52:53.170+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T09:52:53.203+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T09:52:53.260+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:52:53.259+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T09:52:53.304+0000] {logging_mixin.py:190} INFO - [2024-08-30T09:52:53.303+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T09:52:53.333+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.178 seconds
+[2024-08-30T11:27:03.433+0000] {processor.py:186} INFO - Started process (PID=7304) to work on /opt/airflow/dags/cek.py
+[2024-08-30T11:27:03.443+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cek.py for tasks to queue
+[2024-08-30T11:27:03.450+0000] {logging_mixin.py:190} INFO - [2024-08-30T11:27:03.449+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cek.py
+[2024-08-30T11:27:03.585+0000] {processor.py:925} INFO - DAG(s) 'dag_with_taskflow_api_v01_coder2j' retrieved from /opt/airflow/dags/cek.py
+[2024-08-30T11:27:03.796+0000] {logging_mixin.py:190} INFO - [2024-08-30T11:27:03.795+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-08-30T11:27:03.957+0000] {logging_mixin.py:190} INFO - [2024-08-30T11:27:03.956+0000] {dag.py:4138} INFO - Setting next_dagrun for dag_with_taskflow_api_v01_coder2j to 2024-08-30 00:00:00+00:00, run_after=2024-08-31 00:00:00+00:00
+[2024-08-30T11:27:04.110+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cek.py took 0.703 seconds

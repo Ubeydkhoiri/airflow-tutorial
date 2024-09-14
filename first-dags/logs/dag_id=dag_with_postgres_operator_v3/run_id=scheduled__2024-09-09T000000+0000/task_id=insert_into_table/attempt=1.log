@@ -1,0 +1,25 @@
+[2024-09-13T03:55:46.059+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-13T03:55:46.681+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_postgres_operator_v3.insert_into_table scheduled__2024-09-09T00:00:00+00:00 [queued]>
+[2024-09-13T03:55:46.758+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_postgres_operator_v3.insert_into_table scheduled__2024-09-09T00:00:00+00:00 [queued]>
+[2024-09-13T03:55:46.769+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2024-09-13T03:55:46.890+0000] {taskinstance.py:2879} INFO - Executing <Task(PostgresOperator): insert_into_table> on 2024-09-09 00:00:00+00:00
+[2024-09-13T03:55:47.033+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dag_with_postgres_operator_v3', 'insert_into_table', 'scheduled__2024-09-09T00:00:00+00:00', '--job-id', '560', '--raw', '--subdir', 'DAGS_FOLDER/postgres_operator_dag.py', '--cfg-path', '/tmp/tmp0j9akl8c']
+[2024-09-13T03:55:47.027+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=467) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-13T03:55:47.057+0000] {standard_task_runner.py:105} INFO - Job 560: Subtask insert_into_table
+[2024-09-13T03:55:47.061+0000] {standard_task_runner.py:72} INFO - Started process 513 to run task
+[2024-09-13T03:55:47.665+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_with_postgres_operator_v3.insert_into_table scheduled__2024-09-09T00:00:00+00:00 [running]> on host 01a3c7586b71
+[2024-09-13T03:55:48.029+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ubeyd' AIRFLOW_CTX_DAG_ID='dag_with_postgres_operator_v3' AIRFLOW_CTX_TASK_ID='insert_into_table' AIRFLOW_CTX_EXECUTION_DATE='2024-09-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-09T00:00:00+00:00'
+[2024-09-13T03:55:48.034+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-13T03:55:48.078+0000] {sql.py:282} INFO - Executing: 
+            insert into dag_runs (dt, dag_id) values ('2024-09-09', 'dag_with_postgres_operator_v3')
+        
+[2024-09-13T03:55:48.097+0000] {base.py:84} INFO - Retrieving connection 'postgres_localhost'
+[2024-09-13T03:55:48.125+0000] {base.py:84} INFO - Retrieving connection 'postgres_localhost'
+[2024-09-13T03:55:48.158+0000] {sql.py:509} INFO - Running statement: 
+            insert into dag_runs (dt, dag_id) values ('2024-09-09', 'dag_with_postgres_operator_v3')
+        , parameters: None
+[2024-09-13T03:55:48.167+0000] {sql.py:518} INFO - Rows affected: 1
+[2024-09-13T03:55:48.192+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-13T03:55:48.193+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag_with_postgres_operator_v3, task_id=insert_into_table, run_id=scheduled__2024-09-09T00:00:00+00:00, execution_date=20240909T000000, start_date=20240913T035546, end_date=20240913T035548
+[2024-09-13T03:55:48.252+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-09-13T03:55:48.293+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

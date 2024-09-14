@@ -1,0 +1,18 @@
+[2024-09-13T03:55:42.990+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-13T03:55:43.060+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_python_dependencies_v2.get_sklearn scheduled__2024-09-12T00:00:00+00:00 [queued]>
+[2024-09-13T03:55:43.090+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_python_dependencies_v2.get_sklearn scheduled__2024-09-12T00:00:00+00:00 [queued]>
+[2024-09-13T03:55:43.093+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-09-13T03:55:43.277+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_sklearn> on 2024-09-12 00:00:00+00:00
+[2024-09-13T03:55:43.295+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=406) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-13T03:55:43.299+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dag_with_python_dependencies_v2', 'get_sklearn', 'scheduled__2024-09-12T00:00:00+00:00', '--job-id', '552', '--raw', '--subdir', 'DAGS_FOLDER/python_dependencies_dag.py', '--cfg-path', '/tmp/tmp62yh9z8z']
+[2024-09-13T03:55:43.318+0000] {standard_task_runner.py:105} INFO - Job 552: Subtask get_sklearn
+[2024-09-13T03:55:43.322+0000] {standard_task_runner.py:72} INFO - Started process 463 to run task
+[2024-09-13T03:55:43.587+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_with_python_dependencies_v2.get_sklearn scheduled__2024-09-12T00:00:00+00:00 [running]> on host 01a3c7586b71
+[2024-09-13T03:55:43.897+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ubeyd' AIRFLOW_CTX_DAG_ID='dag_with_python_dependencies_v2' AIRFLOW_CTX_TASK_ID='get_sklearn' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-12T00:00:00+00:00'
+[2024-09-13T03:55:43.902+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-13T03:55:48.795+0000] {logging_mixin.py:190} INFO - scikit-learn with version: 1.5.1
+[2024-09-13T03:55:48.797+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-13T03:55:48.820+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-13T03:55:48.822+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag_with_python_dependencies_v2, task_id=get_sklearn, run_id=scheduled__2024-09-12T00:00:00+00:00, execution_date=20240912T000000, start_date=20240913T035543, end_date=20240913T035548
+[2024-09-13T03:55:48.908+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-09-13T03:55:48.933+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
